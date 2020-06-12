@@ -1,0 +1,13 @@
+<ActionBar>
+    <Label text="Home"></Label>
+</ActionBar>
+
+<ListView [items]="products" (itemTap)="onItemTap($event)">
+    <ng-template let-product="item" let-i="index" let-odd="odd" let-even="even">
+        <Label [text]="product.Name" class="list-group-item"></Label>
+        <!-- <StackLayout>
+            <ScrollView height="40">
+            </ScrollView>
+        </StackLayout> -->
+    </ng-template>
+</ListView>
